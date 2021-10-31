@@ -90,6 +90,10 @@ html::-webkit-scrollbar-thumb {
   left: 0;
   right: 0;
   z-index: 1000;
+  transform: translateY(-10rem);
+}
+.header.active {
+  transform: translateY(0rem);
 }
 .header .logo {
   font-size: 2.5rem;
@@ -208,6 +212,12 @@ html::-webkit-scrollbar-thumb {
     left: 0;
     right: 0;
     background: #fff;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  .header .navbar.active {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
   .header .navbar a {
     display: block;
@@ -218,5 +228,9 @@ html::-webkit-scrollbar-thumb {
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+
+  .header .login-form {
+    width: 90%;
   }
 }/*# sourceMappingURL=style.css.map */
