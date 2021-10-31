@@ -10,7 +10,7 @@
     transition: all .2s linear;
 }
 
-$carrot-color: #e67e22;
+$carrot-color:  #e67e22;
 $black: #130f40;
 $white: #fff;
 $light-color: #666;
@@ -307,6 +307,66 @@ section {
     }
 }
 
+// food section
+.dog-food,
+.cat-food{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+
+    .image {
+        flex: 1 1 40rem;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .content {
+        flex:1 1 40rem;
+        text-align: center;
+        padding: 2rem;
+    
+
+        h3 {
+            font-size: 3.5rem;
+            color: $black;    
+            
+            span {
+                color: $carrot-color;
+            }
+        }
+
+        p {
+            padding: 1rem 0;
+            line-height: 2;
+            color: $light-color;
+            font-size: 1.6rem;
+        }
+
+        .amount {
+            font-size: 3.5rem;
+            color: $black;
+            padding: .5rem 0;
+        }
+
+        a {
+            img {
+                height: 15rem;
+                margin-top: 1rem;
+            }
+
+            &:hover img{
+                transform: rotate(15deg);
+            }
+        }
+    }
+}
+
+.cat-food {
+    flex-wrap: wrap-reverse;
+}
 
 
 
