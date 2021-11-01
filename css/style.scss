@@ -619,6 +619,49 @@ section {
 }
 
 
+// =======footer========
+.footer {
+    position: relative;
+    background: url(/images/footer_background.jpg) no-repeat;
+    background-position: center;
+    background-size: center;
+    padding-top: 10rem;
+    padding-bottom: 2rem;
+
+    img {
+        position: absolute;
+        top:0;left: 0;
+        height: 10rem;
+        width: 100%;
+    }
+
+    .share {
+        display:flex;
+        justify-content: center;
+        gap:1.5rem;
+
+        a{ 
+            @include white-btn();
+
+            i{
+                padding-right: .5rem;
+            }
+        }
+    }
+
+    .copyright {
+        text-align: center;
+        color:#fff;
+        font-size: 2rem;
+        padding:2rem 1rem;
+        margin-top: 2.5rem;
+        
+        span {
+            color: $carrot-color;
+        }
+    }
+}
+
 
 
 
