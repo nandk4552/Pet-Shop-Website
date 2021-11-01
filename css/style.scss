@@ -499,6 +499,75 @@ section {
 
 
 
+// ======plan section css======
+
+.plan .box-container {
+    @include grid(30rem);
+
+    .box {
+        position: relative; 
+        padding: 2rem;
+        border-radius: .5rem;
+        background: $light-bg;
+        margin-bottom: 2rem;
+        position: relative;
+        box-shadow: $box-shadow, $box-shadow;
+
+        .btn {
+            position: absolute;
+            bottom: -2rem;right: 2rem;
+            background: #fff;
+        }
+
+        .title {
+            text-align: center;
+            color:$carrot-color;
+            font-size: 2rem;
+        }
+        .day {
+            text-align: center;
+            color:$black;
+            font-size: 3.5rem;
+        }
+
+        .icon {
+            color:$carrot-color;
+            font-size: 5rem;
+            padding: 2rem 0;
+        }
+
+        .list {
+            margin: 1rem 0;
+
+            p{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-size: 1.5rem;
+                color: $light-color;
+                padding: 1rem 0;
+
+                span {
+                    color: $carrot-color;
+                }
+            }
+        }
+        .amount {
+            font-size: 5rem;
+            font-weight: 600;
+            color: $black;
+            
+            span {
+                font-size: 3rem;
+            }
+        }
+
+
+    }
+}
+
+
+
 
 
 
@@ -550,6 +619,7 @@ section {
             }
         }
     }
+    
 }
 
 @media  (max-width:768px){
